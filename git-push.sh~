@@ -1,0 +1,9 @@
+echo "Commit Message ?"
+read message
+echo "File to push ?"
+read file
+git add ${file}
+git commit -m "${message}"
+echo "Branch ?"
+read branch
+git push -u origin ${branch}
